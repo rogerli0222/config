@@ -7,7 +7,13 @@ server:
 spring:
   application:
     name: eurekaclient
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/school?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123
 management:
   security:
     #关闭安全验证，否则访问refresh端点时会提示权限不足
     enabled: false
+  
